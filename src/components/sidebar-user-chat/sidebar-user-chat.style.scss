@@ -1,0 +1,28 @@
+@import '../../scss/custom-variables.scss';
+
+
+.user {
+   height: 73px;
+   cursor: pointer;
+   &:hover {
+      background-color: $Outer-Space-Crayola;
+   }
+
+   .user-image {
+      height: 100%;
+   }
+
+   .user-info {
+      width: 100%;
+      height: 100%;
+
+      span {
+         font-size: 17px;
+      }
+
+      p {
+         color: $Cool-Grey;
+         font-size: 13px;
+      }
+   }
+}

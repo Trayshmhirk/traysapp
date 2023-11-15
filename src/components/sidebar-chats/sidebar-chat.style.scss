@@ -1,0 +1,14 @@
+@import '../../scss/custom-variables.scss';
+
+
+// user chats component
+.sidebar-chats {
+   width: 100%;
+   height: 100%;
+   overflow-y: scroll;
+}
+
+
+.start-chat {
+   color: $Cool-Grey;   
+}

@@ -1,0 +1,18 @@
+@import '../../scss/custom-variables.scss';
+
+
+.chat-foot {
+   width: 100%;
+   height: 65px;
+   background-color: $Charleston-Green;
+   color: $Cool-Grey;
+
+   .form-control {
+      height: 40px;
+      background-color: $Outer-Space-Crayola;
+
+      &:focus, &:valid {
+         background-color: $Outer-Space-Crayola;
+      }
+   }
+}

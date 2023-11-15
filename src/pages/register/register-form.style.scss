@@ -1,0 +1,24 @@
+@import '../../scss/custom-variables.scss';
+
+
+.registration-form {
+   background-color: $Dark-Jungle-Green;
+
+   .form-container {
+      background-color: $Outer-Space-Crayola;
+      width: 340px;
+
+      .logo {
+         font-weight: bold;
+         
+         img {
+            width: 45px;
+         }
+      }
+
+      p {
+         color: $Light-Gray;
+      }
+   }
+
+}

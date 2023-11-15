@@ -1,0 +1,112 @@
+// primary colors
+$Dark-Jungle-Green: #121d24;
+$Outer-Space-Crayola: #293841; // #2A3942 #313D45
+$Eerie-Black: #111B21;
+$Charleston-Green: #202C33;
+$Light-Charleston-Green: #222E35;
+$Gunmetal: #233138;
+$Chinese-Black: #0C1317; // #0C1317
+$Castleton-Green: #005C4B;
+$Deep-Green-Cyan-Turquoise: #0B7369;
+$Green-Munsell: #00A884;
+
+
+// secondary colors
+$Light-Gray: #D1D6D8;
+$Silver-Sand: #BCC3C7;
+$White: #fff;
+$Bright-Gray: #E9EDEF;
+$Cool-Grey: #8696A0;
+$Gainsboro: #D9DEE0;
+
+
+// Customizing Bootstrap Variable
+
+// body
+$body-bg: $Chinese-Black;
+$body-color: $Bright-Gray;
+
+// colors
+// $primary:       $White;
+// $secondary:     $gray-600;
+// $success:       $green;
+// $info:          $cyan;
+// $warning:       $yellow;
+// $danger:        $red;
+// $light:         $gray-100;
+// $dark:          $gray-900;
+
+
+$border-width:                1px;
+$border-color:                $Outer-Space-Crayola;
+
+
+// input variables
+$input-bg:                              transparent;
+$input-color:                           $Bright-Gray;
+$input-border-width:                    0;
+$input-border-radius:                   0;
+$input-focus-width:                     2px;
+$input-focus-box-shadow:                none;
+$input-placeholder-color:               rgba($Bright-Gray, 0.6);
+$input-padding-y:                       15px;
+$input-padding-x:                       15px;
+
+
+// navbar dropdown variables
+$dropdown-min-width:                10rem;
+$dropdown-padding-y:                .5rem;
+$dropdown-bg:                      $Gunmetal;
+$dropdown-border-radius:           3px;
+$dropdown-divider-bg:               rgba($Light-Gray, .1);
+$dropdown-item-padding-y:           10px;
+$dropdown-color:                    $Silver-Sand;
+$dropdown-link-hover-bg:         $Eerie-Black;
+$dropdown-link-active-bg:           $Eerie-Black;
+
+
+$btn-border-width:            0;
+
+
+// $offcanvas-padding-y:               $modal-inner-padding;
+// $offcanvas-padding-x:               $modal-inner-padding;
+// $offcanvas-horizontal-width:        100%;
+// $offcanvas-vertical-height:         30vh;
+// $offcanvas-transition-duration:     .3s;
+// $offcanvas-border-color:            $modal-content-border-color;
+// $offcanvas-border-width:            $modal-content-border-width;
+// $offcanvas-title-line-height:       $modal-title-line-height;
+$offcanvas-bg-color:                $Chinese-Black;
+// $offcanvas-color:                   var(--#{$prefix}body-color);
+// $offcanvas-box-shadow:              $modal-content-box-shadow-xs;
+$offcanvas-backdrop-bg:             none;
+// $offcanvas-backdrop-opacity:        $modal-backdrop-opacity;
+
+
+::-webkit-scrollbar{
+   width: .3em;
+}
+
+::-webkit-scrollbar-thumb{
+   background: #374045;
+}
+
+::-webkit-scrollbar-track{
+   background: transparent;
+}
+
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+
+
+@mixin mobile-styles($breakpoint, $props) {
+   @media (max-width: #{$breakpoint}px) {
+      @content;
+      #{$props} {
+         // Add the styles specific to this breakpoint
+         @content;
+      }
+   }
+}

@@ -1,0 +1,28 @@
+@import './scss/custom-variables.scss';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: $Dark-Jungle-Green;
+
+   a {
+      color: $Bright-Gray;
+      font-weight: 700;
+
+      &:hover {
+         text-decoration: none !important;
+      }
+      
+   }
+   
+   p {
+      margin: 0;
+   }
+   
+}
+
+

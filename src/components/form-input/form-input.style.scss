@@ -1,0 +1,14 @@
+@import '../../scss/custom-variables.scss';
+
+
+
+.input-group{
+   
+   input {
+      border-bottom: 1px solid $Light-Gray !important;
+   
+      &:focus { 
+         border-bottom: 2px solid $Light-Gray !important;
+      }
+   }
+}

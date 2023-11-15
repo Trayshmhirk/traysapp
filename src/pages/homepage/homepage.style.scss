@@ -1,0 +1,19 @@
+@import '../../scss/custom-variables.scss';
+
+.homepage {
+   background-color: $Chinese-Black;
+   
+   .app-container {
+      width: 97vw;
+      height: 95vh;
+   
+      @include mobile-styles(1068, &) {
+         width: 100vw;
+         height: 100vh;
+      }
+   }
+}
+
+
+
+

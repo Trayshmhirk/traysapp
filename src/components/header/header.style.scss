@@ -1,0 +1,12 @@
+@import '../../scss/custom-variables.scss';
+
+header {
+   height: 100px;
+   background-color: $Charleston-Green;
+   padding: 0 30px;
+
+   div {
+      height: 55px;
+      font-size: 19px;
+   }
+}

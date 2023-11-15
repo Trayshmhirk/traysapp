@@ -1,0 +1,79 @@
+@import '../../scss/custom-variables.scss';
+
+
+
+.EmojiPickerReact.epr-main.epr-dark-theme {
+   width: 100%;
+   background-color: $Charleston-Green;
+   border: none;
+   border-radius: 0;
+
+
+   .epr-header {
+
+      input.epr-search {
+         background-color: $Light-Charleston-Green;
+         border: none;
+         padding-left: 40px;
+      }
+
+      button.epr-cat-btn.epr-active {
+         background-position-y: 0;
+         
+         &:hover {
+            background-position-y: 0;
+         }
+
+         &:active {
+            background-position-y: 0;
+            &::before {
+               display: none;
+            }
+         }
+
+         &:focus {
+            background-position-y: 0;
+            &::before {
+               display: none;
+            }
+         }
+      }
+      button.epr-cat-btn {
+
+         &:hover {
+            background-position-y: 0;
+         }
+
+         &:focus {
+            background-position-y: 0;
+
+            &::before {
+               display: none;
+            }
+         }
+
+         &:active {
+            background-position-y: 0;
+
+            &::before {
+               display: none;
+            }
+         }
+      }
+   }
+
+   .epr-body {
+
+      .epr-emoji-category-label {
+         background-color: rgba($Light-Charleston-Green, .3);
+      }
+   }
+   
+}
+
+.EmojiPickerReact.epr-dark-theme:not(.epr-search-active) .epr-category-nav>button.epr-cat-btn:hover {
+   background-position-y: 0; 
+}
+.EmojiPickerReact.epr-dark-theme:not(.epr-search-active) .epr-category-nav>button.epr-cat-btn.epr-active {
+   background-position-y: 0;
+}

@@ -1,0 +1,31 @@
+.nav-item {
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+
+   &:focus, &:hover, &:valid {
+      border-radius: 50%;
+      background-color: hsla(0,0%,100%,0.1);
+   }
+
+   .menu-icon {
+      font-size: 19px;
+      width: 40px;
+   }
+
+   .dropdown-toggle {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      
+      &::after {
+         display: none;
+      }
+   }
+
+   .dropdown-menu[data-bs-popper] {
+      top: 110%;
+      right: 0;
+      left: auto;
+   }
+}

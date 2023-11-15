@@ -1,0 +1,26 @@
+@import '../../scss/custom-variables.scss';
+
+
+// Sidebars
+.sidebar {
+   flex: 1;
+   max-width: 450px;
+   background-color: $Eerie-Black;
+   border-right: 1px solid $Outer-Space-Crayola;
+   overflow: hidden;
+   position: relative;
+
+   .new-chat-icon {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      border-radius: 15px;
+      background-color: $Green-Munsell;
+
+      svg {
+         color: $Chinese-Black;
+      }
+   }
+}

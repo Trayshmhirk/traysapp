@@ -1,0 +1,33 @@
+@import '../../scss/custom-variables.scss';
+
+
+// Chats
+.chat {
+   flex: 2;
+   background-color: $Chinese-Black;
+   position: relative;
+
+   .plain-bg {
+      background: #222E35;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      p {
+         color: $Cool-Grey;
+         font-size: 14px;
+      }
+   }
+
+   .user-chat-bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: .1;
+      background-position: center;
+   }
+}

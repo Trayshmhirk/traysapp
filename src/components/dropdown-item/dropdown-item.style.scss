@@ -1,0 +1,26 @@
+.foot-dropdown {
+   .dropdown-menu.show {
+      transform: translate3d(0px, -52px, 0px) !important;
+      border-radius: 12px;
+      padding: 10px;
+
+      .dropdown-padding {
+         border-radius: 7px;
+
+         .fa-file {
+            color: #7F66FF;
+         }
+         
+         .fa-image {
+            color: #007BFC;
+         }
+
+         .icon-style {
+            font-size: 20px;
+            padding-right: 12px;
+         }
+      }
+
+   }
+}
+

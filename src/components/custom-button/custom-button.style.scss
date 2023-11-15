@@ -1,0 +1,10 @@
+@import '../../scss/custom-variables.scss';
+
+.isgooglesignin {
+   background-color: $Eerie-Black !important;
+   color: $Light-Gray;
+
+   &:hover {
+      background-color: rgba($Eerie-Black, 0.6) !important;
+   }
+}
