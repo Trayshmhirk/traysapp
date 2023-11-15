@@ -52,7 +52,7 @@ To install the application, follow these steps:
 1. Clone the repository: `git clone https://github.com/Trayshmhirk/traysapp.git`
 2. Navigate into the project directory: `cd traysapp`
 3. Install the dependencies: `npm install`
-4. Start the application: `npm start`
+4. Start the application: `npm run dev` or `yarn dev` if you prefer yarn.
 
 ## Usage
 
@@ -62,12 +62,13 @@ After starting the application, navigate to `http://localhost:3000` in your web 
 
 - `src/components`: This directory contains all the React components.
 - `src/assets`: This directory contains static assets such as images.
-- `src/styles`: This directory contains all the Sass stylesheets.
+- `src/scss`: This directory contains all the SASS custom variables.
 
 ## Author
 
 - Frontend Mentor - [@Trayshmhirk](https://www.frontendmentor.io/profile/Trayshmhirk)
 - Twitter - [@TrayShmhirk01](https://www.twitter.com/TrayShmhirk01)
+- LinkedIn - [@Micheal Osunbajo](https://www.linkedin.com/in/micheal-osunbajo-84260b14b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 
 <!-- ## Contributing
