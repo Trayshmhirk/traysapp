@@ -2,7 +2,6 @@
 
 TraysApp is a comprehensive chat application built with React, Redux Toolkit, Firebase, React Router DOM, Bootstrap, and Sass. It provides a platform for users to engage in real-time conversations, make phone calls, and express themselves with an extensive emoji keyboard. TraysApp is designed to deliver a seamless and interactive communication experience, similar to popular chat applications like WhatsApp.
 
-![TraysApp](/src/assets/screencapture-localhost-3000-2023-11-15-18_38_03.png)
 
 ## Table of Contents
 
