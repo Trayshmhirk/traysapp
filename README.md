@@ -50,7 +50,7 @@ You can experience the app live at []().
 
 To install the application, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/traysapp.git`
+1. Clone the repository: `git clone https://github.com/Trayshmhirk/traysapp.git`
 2. Navigate into the project directory: `cd traysapp`
 3. Install the dependencies: `npm install`
 4. Start the application: `npm start`
