@@ -8,7 +8,7 @@ export const selectUserInfo = createSelector(
    (chat) => chat.userInfo
 )
 
-export const selectSetChats = createSelector(
-   [selectChat],
-   (chat) => chat.chats
-)
+// export const selectSetChats = createSelector(
+//    [selectChat],
+//    (chat) => chat.chats
+// )

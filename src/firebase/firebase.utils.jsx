@@ -1,4 +1,3 @@
-
 import { initializeApp } from 'firebase/app'
 import { 
    getAuth, 
@@ -8,9 +7,23 @@ import {
    setPersistence,
    browserLocalPersistence
 } from 'firebase/auth';
-import { getFirestore, doc, setDoc, collection, getDocs, orderBy, query, getDoc, serverTimestamp } from 'firebase/firestore';
-import { getStorage, ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
-
+import { 
+   getFirestore, 
+   doc, 
+   setDoc, 
+   collection, 
+   getDocs, 
+   orderBy, 
+   query, 
+   getDoc, 
+   serverTimestamp 
+} from 'firebase/firestore';
+import { 
+   getStorage, 
+   ref, 
+   uploadBytesResumable, 
+   getDownloadURL 
+} from 'firebase/storage';
 
 
 const firebaseConfig = {
@@ -26,13 +39,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+export const auth = getAuth(app, {sessionStorage: true});
 export const firestore = getFirestore(app);
 const storage = getStorage(app);
 setPersistence(auth, browserLocalPersistence);
 export const db = getFirestore();
 
-// 
+
+// Register new user on firebase with their input info
 export const registerUser = async (user, profilePicture, displayName) => {
 
    const { email } = user;
@@ -94,6 +108,8 @@ export const registerUser = async (user, profilePicture, displayName) => {
 
 }
 
+
+// initializing sign in with google
 const provider = new GoogleAuthProvider();
 provider.setCustomParameters({prompt: 'select_account'})
 export const signInWithGoogle = () => signInWithPopup(auth, provider);
@@ -109,6 +125,7 @@ export const getUsers = async () => {
 }
 
 
+// create or open new chat when a user is selected
 export const createOrOpenChat = async (combinedId, currentUser, selectedUserId, selectedUser) => {
    // check if the chat group exists in firestore. create new chat group, if not
 
@@ -118,10 +135,10 @@ export const createOrOpenChat = async (combinedId, currentUser, selectedUserId, 
 
       if (!chatDoc.exists()) {
          // create a chat in chats collection
-         await setDoc(chatDocRef, {messages: []})
+         await setDoc(chatDocRef, {messages: []});
       }
 
-      // create user chats
+      // create user chats for the current user
       await setDoc(doc(db, 'userChats', currentUser.id), {
          [combinedId]: {
             userInfo: {
@@ -133,7 +150,7 @@ export const createOrOpenChat = async (combinedId, currentUser, selectedUserId, 
          }
       })
 
-      // create user chats
+      // create user chats for the selected user
       await setDoc(doc(db, 'userChats', selectedUserId), {
          [combinedId]: {
             userInfo: {
@@ -144,7 +161,6 @@ export const createOrOpenChat = async (combinedId, currentUser, selectedUserId, 
             date: serverTimestamp()
          }
       })
-      
    } catch (error) {
       console.error(error);
    }
